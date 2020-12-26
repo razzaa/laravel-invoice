@@ -14,7 +14,22 @@
 
 3-create copy of .env.example and rename .env
 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel-invoice
+DB_USERNAME=root
+DB_PASSWORD=
+
 4-$php artisan key:generate
+
+5-$npm install
+
+6-$npm run dev
+
+7-$php artisan migrate
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
