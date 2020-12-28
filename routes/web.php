@@ -16,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/first', function () {
+    return view('invoice.index');
+});
+Route::get('/second', function () {
+    return view('invoice.second');
+});
+Route::get('/third', function () {
+    return view('invoice.third');
+});
 
 Auth::routes();
 

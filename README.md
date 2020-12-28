@@ -10,7 +10,9 @@
 ## Run Prject
 1-$git clone git@github.com:alibulc/laravel-invoice.git
 
-2-$compser install
+$cd laravel-invoice
+
+2-$composer install
 
 3-create copy of .env.example and rename .env
 
