@@ -29,6 +29,30 @@ DB_PASSWORD=
 
 7-$php artisan migrate
 
+## RuntimeException 
+
+  In order to use the Auth::routes() method, please install the laravel/ui package.
+  at C:\xampp\htdocs\laravel-invoice\vendor\laravel\framework\src\Illuminate\Support\Facades\Auth.php:56
+     52▕      */
+     53▕     public static function routes(array $options = [])
+     54▕     {
+     55▕         if (! static::$app->providerIsLoaded(UiServiceProvider::class)) {
+  ➜  56▕             throw new RuntimeException('In order to use the Auth::routes() method, please install the laravel/ui package.');
+     57▕         }
+     58▕ 
+     59▕         static::$app->make('router')->auth($options);
+     60▕     }
+
+  1   C:\xampp\htdocs\laravel-invoice\routes\web.php:20
+      Illuminate\Support\Facades\Auth::routes()
+
+  2   C:\xampp\htdocs\laravel-invoice\vendor\laravel\framework\src\Illuminate\Routing\RouteFileRegistrar.php:35
+      require("C:\xampp\htdocs\laravel-invoice\routes\web.php")
+
+
+8- $composer update
+
+
 
 ## About Laravel
 
